@@ -27,7 +27,7 @@ class WebHistory_sideboundaries(BaseModel):
     id: int
     name_side_boundaries: str
     path_img_boundaries: bytes = Field(..., example="base64")
-    event_id: bytes = Field(..., example="base64")
+    event_id: int
 
     class Config:
         orm_mode = True
